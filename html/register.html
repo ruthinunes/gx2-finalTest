@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/default.css">
+    <title>Library - Biblioteca Virtual</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav_logo">
+                <img src="../images/logo.svg" alt="library logo">
+            </div>
+            <span class="nav_icon_container">
+                <img src="../images/person-yellow.svg" alt="a yellow icon representing a person">
+                <p>Usuário</p>
+                <img class="nav_icon" src="../images/arrow.svg" alt="">
+            </span>
+            <div class="nav_list">
+                <ul>
+                    <li class="nav_list_item">
+                        <a href="index.html">Sair</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="main_ctn">
+        <header class="main_header">
+            <img src="../images/chevron-left-icon.svg" alt="">
+            <a href="home.html">Home</a>
+            <a href="#">Cadastrar novo livro</a>
+        </header>
+
+        <section class="block form_ctn">
+            <form id="form" class="form" action="">
+                <div class="form_inputs">
+                    <div id="input_upload" class="input_upload">
+                        <input type="file" name="input_file" id="input_file" hidden>
+                        <img class="input_icon" src="../images/plusCircle-icon.svg" alt="Add circle icon">
+                        <p id="inputUploadText">Capa</p>
+                        <img class="uploadedImg" src="../assets/livro01.png" alt="" hidden>
+                    </div>
+                    <div class="input_texts-first">
+                        <input type="text" name="" id="input_title" placeholder="Título" required>
+                        <textarea name="" id="input_text" cols="30" rows="10" placeholder="Sinopse"></textarea>
+                    </div>
+                    <div class="input_texts-second">
+                        <input type="text" name="" id="txt_author" placeholder="Autor" required>
+                        <div class="form_select-input">
+                            <div class="select_btn_ctn">
+                                <span class="select_btn-text">Gênero
+                                </span>
+                                <img class="select_btn_icon" src="../images/poligono-icon.svg" alt="">
+                            </div>
+                            <div class="select_options_ctn">
+                                <div class="option">
+                                    <input type="radio" class="radio" name="category" id="opt-fantasy" hidden>
+                                    <label for="opt-fantasy">Fantasia</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" name="category" id="opt-action" hidden>
+                                    <label for="opt-action">Ação e Aventura</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" value="horror" name="category" id="opt-horror"
+                                        hidden>
+                                    <label for="opt-horror">Horror</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" name="category" id="opt-romance" value="romance"
+                                        hidden>
+                                    <label for="opt-romance">Romance</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" name="category" id="opt-autoajuda"
+                                        value="autoajuda" hidden>
+                                    <label for="opt-autoajuda">Autoajuda</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" name="category" id="opt-ficCie" hidden>
+                                    <label for="opt-ficCie">Ficção Cientifica</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" name="category" id="opt-historia" hidden>
+                                    <label for="opt-historia">História</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" name="category" id="opt-financas" hidden>
+                                    <label for="opt-financas">Finanças</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" name="category" id="opt-webMark" hidden>
+                                    <label for="opt-webMark">Web Marketing</label>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="date" name="" id="txt_date" placeholder="Data de entrada" required>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="button" id="cancel" class="btn-primary">Cancelar</button>
+                    <button type="button" id="save" class="btn-secondary">Salvar</button>
+                </div>
+            </form>
+
+        </section>
+    </main>
+
+    <script src="../js/home.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+
+</html>

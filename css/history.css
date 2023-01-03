@@ -1,0 +1,136 @@
+@import url('default.css');
+
+.main_ctn{
+    width: 95%;
+}
+
+.main_header a{
+    font-size: 1.8rem ;
+}
+
+.table{
+    margin-bottom: 4rem;
+    border-collapse: collapse; 
+    font-size: 1.6rem;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.table_body{
+    display: grid;
+}
+
+.table_head > p{
+    font-weight: 500;
+    align-self: baseline;
+    padding: .8rem 5rem;
+}
+
+.table_head{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFC501;
+    width: 100%;
+}
+
+.table_filter{
+    flex-direction: column;
+    display: flex;
+    padding: 1.5rem 5rem;
+    background: white;
+}
+
+.table_icon{
+    width: 20px;
+    transform: rotate(0deg);
+    transition: all 0.5s ease;
+}
+
+.table_icon.rotate_icon {
+    transform: rotate(180deg);
+}
+
+.table_icon_underline{
+    margin-top: 1.5rem;
+border-bottom: 1.5px solid black;
+width: 100px;
+}
+
+.table_row{
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+}
+
+.table_data{
+    padding: .5rem 5rem;
+}
+
+.table_head, .table_data{
+    width: 100%;
+    border-bottom: solid 0.1rem #CDCDCD;
+}
+
+.table_data:last-child{
+    border-bottom: none;
+}
+
+@media screen and (min-width: 600px) {
+    .table{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .table{
+        width: 60%;
+    }
+}
+@media screen and (min-width: 1024px) {
+   
+    .table{
+        width: 90%;
+    }
+
+    .table_body{
+        display: flex;
+    }
+
+    .table_filter{
+        padding: 0.8rem 5.5rem .8rem 2rem;
+    }
+
+    .table_head > p {
+        padding: 0.8rem 0 .8rem 2rem;
+    }
+
+    .table_icon_underline {
+        width: 80px;
+    }
+
+    .table_data{
+        white-space: nowrap;
+        padding: 0.8rem 0 .8rem 2rem;
+    }
+
+    .table_row{
+        width:100%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .table{
+        font-size: 1.8rem;
+        overflow: hidden;
+    }
+
+    .table_head > p{
+        padding: 0.8rem 1rem;
+    }
+}
+
+@media screen and (min-width: 1120px){
+    .table_head > p{
+        padding: 0.8rem 2rem;
+    }
+}

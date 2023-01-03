@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/library.css">
+    <title>Library - Biblioteca Virtual</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav_logo">
+                <img src="../images/logo.svg" alt="library logo">
+            </div>
+            <span class="nav_icon_container">
+                <img src="../images/person-yellow.svg" alt="a yellow icon representing a person">
+                <p>Usuário</p>
+                <img class="nav_icon" src="../images/arrow.svg" alt="">
+            </span>
+            <div class="nav_list">
+                <ul>
+                    <li class="nav_list_item">
+                        <a href="index.html">Sair</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="main_ctn">
+        <header class="main_header">
+            <img src="../images/chevron-left-icon.svg" alt="">
+            <a href="home.html">Home</a>
+            <a href="#">Biblioteca</a>
+        </header>
+
+        <section class="block block_content">
+            <div class="input_ctn">
+                <div class="input_search-ctn">
+                    <img class="search_img" src="../images/lupa-icon.svg" alt="">
+                    <input type="text" name="" id="input_search" placeholder="Pesquisar livro...">
+                    <button id="search_btn" class="search_btn btn-secondary">Buscar</button>
+                </div>
+                <div class="input_filter-ctn">
+                    <div class="select_list_ctn">
+                        <span class="select_filter_text">Filtrar
+                        </span>
+                        <img class="select_btn_icon" src="../images/poligono-icon.svg" alt="">
+                    </div>
+                    <div class="select_options_ctn">
+                        <div class="option">
+                            <input type="radio" class="radio" name="category" id="opt-genres">
+                            <label for="opt-genres">Gênero</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" name="category" id="opt-author">
+                            <label for="opt-author">Autor</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" name="category" id="opt-date">
+                            <label for="opt-date">Data de entrada</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cards_ctn" class="grid_cards"></div>
+        </section>
+
+        <section class="modals">
+            <div id="modal_main" class="modal modal_main"></div>
+            <div id="modal_rent" class="modal modal_rent"></div>
+            <div id="modal_inactivate" class="modal modal_inactivate"></div>
+            <div id="modal_history" class="modal modal_history"></div>
+        </section>
+    </main>
+
+    <script src="../js/home.js"></script>
+    <script src="../js/library.js"></script>
+
+</body>
+
+</html>

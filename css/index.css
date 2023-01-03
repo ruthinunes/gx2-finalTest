@@ -1,0 +1,109 @@
+@import url(default.css);
+
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(134, 142, 150, 0.4), rgba(134, 142, 150, 0.4)), url(../images/background.png);
+    background-position: bottom center;
+    background-size: cover;
+    font-family: 'Roboto';
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 35%;
+    background-color: #fff;
+    border-radius: .8rem;
+    padding: 3rem 1.8rem;
+}
+
+.login {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_logo {
+    margin-bottom: 7rem;
+    width: 16rem;
+}
+
+.login_input-ctn {
+    position: relative;
+    width: 100%;
+}
+
+.login_input-ctn>input {
+    background-color: #F1F3F5;
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 2rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+}
+
+.login_input-ctn>input:focus {
+    border: 2px solid #FFC501;
+}
+
+.login_input-ctn>img {
+    position: absolute;
+    top: 21px;
+    right: 33px;
+}
+
+.login_link {
+    font-size: 1.5rem;
+    align-self: flex-start;
+    font-weight: bold;
+    color: #000000;
+}
+
+.login_link:hover {
+    color: #707070;
+
+}
+
+.login_btn {
+    width: 100%;
+    margin: 3rem 0 0 0;
+    padding: 1.6rem;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    background-color: #FFC501;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.login_btn:hover {
+    background-color: #000000;
+    color: white;
+}
+
+/* -----RESPONSIVE----- */
+
+@media screen and (max-width: 900px) {
+
+    .container {
+        width: 80%;
+    }
+}
